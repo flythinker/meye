@@ -8,7 +8,7 @@ Moon eye ( a simple monitor tool for linux app implements by python3 )
 - 记录监控日志
 
 ## how to use?
-nohup python main.py &
+nohup python3 main.py &
 
 
 
