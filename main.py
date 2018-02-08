@@ -28,18 +28,18 @@ logger.addHandler(ch)
 
 
 def send_mail(context):
-    sender = "18192409520@163.com"
-    receiver = ['15502923195@163.com']
+    sender = "send@163.com"  
+    receiver = ['receive@163.com']
     host = 'smtp.163.com'
     port = 465
     msg = MIMEText(context)
-    msg['Form'] = '18192409520@163.com'
-    msg['To'] = '15502923195@163.com'
+    msg['Form'] = 'send@163.com'
+    msg['To'] = 'receive@163.com'
     msg['Subject'] = 'system error & warning'
 
     try:
         smtp = smtplib.SMTP_SSL(host, port)
-        smtp.login(sender, '99852100llb')
+        smtp.login(sender, 'yoursendmailpasswd')
         smtp.sendmail(sender, receiver, msg.as_string())
         logger.info('send email success')
     except Exception as e:
