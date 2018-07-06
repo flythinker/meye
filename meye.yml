@@ -1,6 +1,0 @@
-
-interval: 60      #监控间隔时间，单位秒，建议60
-mail:
-  smtp:
-  user:
-  pass:
